@@ -1,0 +1,429 @@
+/* Google Font Link */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --clr-deep-green: hsl(165, 100%, 21%);
+  --clr-light-green: hsl(152, 36%, 84%);
+  --clr-light-blue: hsl(218, 89%, 65%, 0.2);
+  --clr-blue: hsl(218, 89%, 65%);
+  --clr-yellow: hsl(42, 100%, 61%);
+  --clr-light-yellow: hsl(42, 100%, 61%, 0.2);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-light-white: hsl(240, 8%, 95%);
+
+  --clr-dark: hsl(0, 0%, 5%);
+
+  --clr-dark_50: hsla(0, 0%, 5%, 0.5);
+  --clr-dark_70: hsla(0, 0%, 5%, 0.7);
+}
+body {
+  font-family: "Fira Sans", serif;
+  background-color: var(--clr-light-white);
+}
+
+/* Shared Classes */
+
+.container {
+  max-width: 85rem;
+  margin: 0 auto;
+}
+
+/* Header Section */
+
+.primary__header {
+  margin-top: 1rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.primary__header .cta {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--clr-deep-green);
+}
+.primary__header .cta a {
+  text-decoration: none;
+  color: var(--clr-deep-green);
+  font-weight: bold;
+}
+
+/* Banner Section */
+
+.banner {
+  width: 85rem;
+  height: 500px;
+  background-color: var(--clr-light-green);
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 50px 50px 0 50px;
+
+  border-radius: 1.5rem;
+}
+.banner__secondary--header {
+  color: var(--clr-dark_50);
+  margin-bottom: 1rem;
+  font-weight: 400px;
+  font-size: 24px;
+}
+.banner__primary--header {
+  width: 18.76ch;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: var(--clr-dark);
+}
+.banner__pic img {
+  width: 425px;
+  height: 350px;
+}
+.banner__button {
+  margin-top: 1rem;
+  padding: 17px 34px;
+  background-color: var(--clr-deep-green);
+  border: none;
+  border-radius: 0.5rem;
+}
+.banner__button a {
+  text-decoration: none;
+  font-weight: 600px;
+  font-size: 18px;
+  color: var(--clr-white);
+}
+/* Pillar Section */
+.pillar__title {
+  margin-block: 2rem;
+}
+.pillar {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.pillar__card {
+  padding: 1rem;
+  width: 300px;
+  height: 250px;
+  background-color: var(--clr-white);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+
+  border-radius: 1rem;
+  display: grid;
+  gap: 0.25rem;
+}
+/*  The Vision of Future Section */
+
+.future__vision {
+  margin-top: 30px;
+}
+.content__header {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.content__text {
+  color: var(--clr-dark_70);
+
+  font-size: 15px;
+  width: 150ch;
+}
+
+.cards {
+  margin-top: 40px;
+  display: flex;
+
+  gap: 2rem;
+}
+/* Shared Style */
+.card {
+  width: 500px;
+  height: 300px;
+  padding: 2rem;
+  display: grid;
+  gap: 0.5rem;
+  border-radius: 12px;
+}
+.card__one {
+  background-color: var(--clr-light-blue);
+}
+.card__two {
+  background-color: var(--clr-light-green);
+}
+.card__three {
+  background-color: var(--clr-light-yellow);
+}
+.cards__text {
+  color: var(--clr-dark_70);
+  line-height: 24px;
+}
+.cards__btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+}
+.cards__btn a {
+  text-decoration: none;
+  color: var(--clr-white);
+  font-weight: 600;
+}
+
+.btn__one {
+  background-color: var(--clr-blue);
+}
+.btn__two {
+  background-color: var(--clr-deep-green);
+}
+.btn__three {
+  background-color: var(--clr-yellow);
+}
+
+/* quote section*/
+.quote {
+  background-image: url("/assets/quote-bg.png");
+  background-repeat: no-repeat;
+  background-position: 20px 30px;
+  margin-top: 32px;
+  border-radius: 1rem;
+  background-color: var(--clr-white);
+  padding: 3rem 1.5rem;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+.quote p {
+  color: var(--clr-dark_70);
+
+  line-height: 24px;
+}
+.quote__owner {
+  margin-top: 12px;
+}
+.quote__owner h4 {
+  font-weight: 600;
+  color: var(--clr-dark);
+}
+.quote__owner p {
+  color: var(--clr-dark_50);
+  margin-top: 4px;
+}
+/* questions */
+
+.questions {
+  margin-top: 32px;
+}
+.question__wrapper {
+  background-color: var(--clr-white);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box__one {
+  flex-grow: 1;
+  background-color: var(--clr-light-green);
+  padding: 1.75rem;
+  box-shadow: 0 0 0.7px rgba(0, 0, 0, 0.5);
+}
+.box__two,
+.box__three,
+.box__four {
+  padding: 2rem;
+  box-shadow: 0 0 0.7px rgba(0, 0, 0, 0.5);
+}
+.opinion {
+  padding: 1rem;
+  background-color: var(--clr-light-green);
+  color: var(--clr-dark);
+  border: 1px solid var(--clr-dark);
+  border-radius: 8px;
+}
+.line {
+  position: relative;
+  overflow: hidden;
+}
+.line::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 200px;
+  top: -20px;
+  right: 175px;
+  box-shadow: 0 0 0.7px rgba(0, 0, 0, 0.5);
+}
+
+/* <!-- News Section --> */
+.news {
+  margin-top: 32px;
+}
+.news__card {
+  background-color: var(--clr-white);
+  padding: 2.5rem;
+  margin-top: 32px;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+}
+.news__card--img img {
+  border-radius: 1.5rem;
+}
+.news p {
+  color: var(--clr-dark_70);
+}
+.date {
+  margin-block: 1rem;
+}
+.date span {
+  margin-left: 10px;
+}
+.news__card--text {
+  line-height: 24px;
+  width: 87ch;
+}
+.news__btn {
+  padding: 13px 26px;
+  margin-top: 35px;
+  background-color: var(--clr-deep-green);
+
+  border: none;
+  border-radius: 8px;
+}
+.news__btn a {
+  text-decoration: none;
+  color: var(--clr-white);
+  font-weight: 600;
+}
+/* Donate Section */
+.donate {
+  margin-top: 32px;
+}
+.donate p {
+  color: var(--clr-dark_70);
+  width: 125ch;
+  text-align: center;
+}
+.text-center {
+  text-align: center;
+}
+.donate__options {
+  display: flex;
+  margin-top: 32px;
+  gap: 1rem;
+}
+.donate__options button {
+  padding: 40px 100px;
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--clr-white);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+#button__green {
+  background-color: var(--clr-light-green);
+}
+.donate__options button a {
+  text-decoration: none;
+  color: var(--clr-dark);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.other__option {
+  width: 1200px;
+  margin-top: 32px;
+  margin-left: 20px;
+  padding: 16px 32px;
+  border: none;
+  background-color: var(--clr-white);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+.other__option a {
+  text-decoration: none;
+  font-weight: 700;
+
+  color: var(--clr-dark_50);
+}
+.other__button {
+  margin-left: 530px;
+  margin-top: 32px;
+  background-color: var(--clr-deep-green);
+  border-radius: 0.5rem;
+  padding: 17px 34px;
+  border: none;
+}
+.other__button a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.newsletter {
+  padding: 80px 100px;
+  margin-top: 32px;
+  background-color: var(--clr-light-green);
+  border-radius: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.newsletter p {
+  color: var(--clr-dark_70);
+}
+.newsletter__text {
+  width: 75ch;
+
+  line-height: 24px;
+  text-align: center;
+}
+.newsletter input {
+  padding: 16px 40px;
+  border: none;
+  width: 600px;
+  position: relative;
+  margin-top: 32px;
+}
+.subscribe__btn {
+  margin-top: 32px;
+  padding: 16px 40px;
+  border: none;
+  background-color: var(--clr-deep-green);
+  color: var(--clr-white);
+  font-weight: bold;
+  position: absolute;
+  right: 325px;
+}
+
+form p {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.footer__header {
+  margin-top: 32px;
+  font-size: 0.75rem;
+  background-color: var(--clr-white);
+  box-shadow: 0px 0px 0.5px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+}
+.socials {
+  margin-top: 32px;
+  margin-bottom: 100px;
+  font-size: 0.75rem;
+  background-color: var(--clr-white);
+  box-shadow: 0px 0px 0.5px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
